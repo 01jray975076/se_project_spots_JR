@@ -16,6 +16,10 @@
   font-weight: 500;
   font-size: 1rem;
   color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 630px;
 }
 
 .card__image {
@@ -60,4 +64,34 @@
 }
 
 @media screen and (max-width: 627px) {
+  .card {
+    border-radius: 8px;
+    box-shadow: none;
+    margin: 0 10px;
+  }
+
+  .card__title {
+    font-size: 0.95rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%; /* Let title fit card width */
+  }
+
+  .card__image {
+    height: 250px; /* Reduce image height on smaller screens */
+  }
+
+  .card__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .card__add-btn {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
