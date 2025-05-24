@@ -1,0 +1,38 @@
+/* Footer Styles */
+.footer {
+  background-color: #faf6e8; /* Light cream background similar to your image */
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__line {
+  width: 90%;
+  margin: 0 auto 8px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.footer__text {
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media screen and (max-width: 627px) {
+  .footer {
+    padding: 16px 10px;
+  }
+
+  .footer__line {
+    width: 95%;
+  }
+
+  .footer__text {
+    font-size: 11px;
+    color: #444; /* slightly darker for better readability on mobile */
+  }
+}
