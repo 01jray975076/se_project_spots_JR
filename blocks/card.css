@@ -1,80 +1,80 @@
 .card {
-  background-color: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-  display: flex;
-  flex-direction: column;
+  background-color: #fff; /* White background for the card */
+  border-radius: 12px; /* Rounded corners for the card */
+  overflow: hidden; /* Ensures child elements do not overflow the card */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease; /* Smooth transition for hover effect */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Column layout for card content */
 }
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px); /* Lift the card on hover */
 }
 
 .card__title {
-  margin: 0;
-  font-weight: 500;
-  font-size: 1rem;
-  color: #333;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 630px;
+  margin: 0; /* No margin for the title */
+  font-weight: 500; /* Medium font weight for the title */
+  font-size: 1rem; /* Font size for the title */
+  color: #333; /* Dark text color for contrast */
+  text-overflow: ellipsis; /* Ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow text */
+  max-width: 630px; /* Limit title width to fit card */
 }
 
 .card__image {
-  height: 413px;
-  width: 100%;
-  object-fit: cover;
-  display: block;
+  height: 413px; /* Fixed height for the image */
+  width: 100%; /* Full width for the image */
+  object-fit: cover; /* Cover the card area without distortion */
+  display: block; /* Block display for the image */
 }
 
 .card__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; /* Flexbox for content layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between items */
 }
 
 .card__like-btn {
-  background-image: url(../images/heart.svg);
-  width: 23px;
-  height: 20px;
-  border: none;
-  background-color: transparent;
-  opacity: 0.4;
+  background-image: url(../images/heart.svg); /* Heart icon for like button */
+  width: 23px; /* Fixed width for the button */
+  height: 20px; /* Fixed height for the button */
+  border: none; /* No border for the button */
+  background-color: transparent; /* Transparent background for the button */
+  opacity: 0.4; /* Semi-transparent for inactive state */
 }
 
 .card__add-btn {
-  background-color: #1a1a1a;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
+  background-color: #1a1a1a; /* Dark background for the button */
+  color: #fff; /* White text color for contrast */
+  border: none; /* No border for the button */
+  border-radius: 6px; /* Rounded corners for the button */
   padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  cursor: pointer;
+  font-size: 0.85rem; /* Smaller font size for the button */
+  position: absolute; /* Absolute positioning for the button */
+  bottom: 1rem; /* Position at the bottom of the card */
+  right: 1rem; /* Position to the right of the card */
+  cursor: pointer; /* Pointer cursor for clickable button */
 }
 
 .block {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  text-overflow: ellipsis; /* Ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow text */
 }
 
 @media screen and (max-width: 627px) {
   .card {
-    border-radius: 8px;
-    box-shadow: none;
-    margin: 0 10px;
+    border-radius: 8px; /* Smaller border radius for mobile */
+    box-shadow: none; /* Remove shadow for mobile */
+    margin: 0 10px; /* Margin for mobile */
   }
 
   .card__title {
-    font-size: 0.95rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    font-size: 0.95rem; /* Smaller font size for mobile */
+    text-overflow: ellipsis; /* Ellipsis for overflow text */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow text */
     max-width: 100%; /* Let title fit card width */
   }
 
@@ -83,15 +83,15 @@
   }
 
   .card__content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the start */
+    gap: 8px; /* Add gap between items */
   }
 
   .card__add-btn {
-    position: static;
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
+    position: static; /* Static positioning for mobile */
+    width: 100%; /* Full width for the button */
+    text-align: center; /* Center text in the button */
+    margin-top: 1rem; /* Margin for spacing */
   }
 }

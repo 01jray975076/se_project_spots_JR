@@ -1,21 +1,43 @@
 .cards {
-  padding-top: 20px;
-  background-color: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  padding-top: 20px; /* Padding at the top for spacing */
+  background-color: #fff; /* White background for the cards section */
+  border-radius: 12px; /* Rounded corners for the cards section */
+  overflow: hidden; /* Hide overflow for rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease; /* Smooth transition for hover effect */
 }
 
 .cards__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 413px);
-  justify-content: center;
-  gap: 40px 20px;
+  list-style-type: none; /* No bullet points for the list */
+  padding: 0; /* No padding for the list */
+  margin: 0; /* No margin for the list */
+  display: grid; /* Grid layout for the cards */
+  grid-template-columns: repeat(
+    auto-fit,
+    413px
+  ); /* Auto-fit columns for responsive design */
+  justify-content: center; /* Center the grid items */
+  gap: 40px 20px; /* Gap between grid items */
 }
 
 @media screen and (max-width: 627px) {
+  .cards {
+    padding-top: 12px; /* Slightly reduce padding for smaller screens */
+    border-radius: 8px; /* Slightly smaller border radius */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Subtler shadow for mobile */
+  }
+
+  .cards__list {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 20px; /* Reduced gap for smaller/tighter screens */
+    padding: 0 16px; /* Add horizontal padding to avoid edge collisions */
+  }
+}
+
+/* Hover effect (only on devices wider than 627px) */
+@media screen and (min-width: 628px) {
+  .cards:hover {
+    transform: translateY(-5px); /* Lift the cards slightly on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  }
 }
