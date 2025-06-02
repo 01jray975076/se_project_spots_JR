@@ -1,13 +1,13 @@
 .page {
-  background: none;
-  padding: 0;
-  margin: 0;
-  background-color: #fcf5e5;
-  min-height: 100vh;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  background: none; /* No background for the page */
+  padding: 0; /* No padding for the page */
+  margin: 0; /* No margin for the page */
+  background-color: #fcf5e5; /* Light cream background similar to your image */
+  min-height: 100vh; /* Minimum height to cover the viewport */
+  font-family: Poppins, Arial, Helvetica, sans-serif; /* Font family for the page */
 }
 
 .page__section {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 1280px; /* Maximum width for the section */
+  margin: 0 auto; /* Center the section */
 }

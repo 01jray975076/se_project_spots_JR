@@ -1,38 +1,38 @@
 /* Footer Styles */
 .footer {
   background-color: #faf6e8; /* Light cream background similar to your image */
-  padding: 20px 0;
-  text-align: center;
-  font-family: "Arial", sans-serif;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  padding: 20px 0; /* Padding for top and bottom */
+  text-align: center; /* Centered text alignment */
+  font-family: "Arial", sans-serif; /* Font family for the footer */
+  position: relative; /* Relative positioning for footer */
+  bottom: 0; /* Position at the bottom of the page */
+  width: 100%; /* Full width for the footer */
 }
 
 .footer__line {
-  width: 90%;
-  margin: 0 auto 8px;
-  border: none;
-  border-top: 1px solid #ccc;
+  width: 90%; /* Width of the line */
+  margin: 0 auto 8px; /* Center the line and add bottom margin */
+  border: none; /* No border for the line */
+  border-top: 1px solid #ccc; /* Light gray line for separation */
 }
 
 .footer__text {
-  color: #666;
-  font-size: 12px;
-  margin: 0;
+  color: #666; /* Gray text color for better readability */
+  font-size: 12px; /* Font size for the footer text */
+  margin: 0; /* No margin for the text */
 }
 
 @media screen and (max-width: 627px) {
   .footer {
-    padding: 16px 10px;
+    padding: 16px 10px; /* Reduced padding for smaller screens */
   }
 
   .footer__line {
-    width: 95%;
+    width: 95%; /* Slightly wider line on mobile */
   }
 
   .footer__text {
-    font-size: 11px;
+    font-size: 11px; /* Smaller font size for mobile */
     color: #444; /* slightly darker for better readability on mobile */
   }
 }

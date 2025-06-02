@@ -49,7 +49,7 @@
   color: #fff; /* White text color for contrast */
   border: none; /* No border for the button */
   border-radius: 6px; /* Rounded corners for the button */
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.75rem; /* Padding for the button */
   font-size: 0.85rem; /* Smaller font size for the button */
   position: absolute; /* Absolute positioning for the button */
   bottom: 1rem; /* Position at the bottom of the card */

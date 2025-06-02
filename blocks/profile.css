@@ -1,132 +1,132 @@
 .profile {
-  position: relative;
-  display: flex;
-  padding: 34px 0 20px;
-  border-bottom: rgba(33, 33, 33, 0.4) solid 1px;
+  position: relative; /* Relative positioning for the profile block */
+  display: flex; /* Flexbox for layout */
+  padding: 34px 0 20px; /* Padding for top and bottom */
+  border-bottom: rgba(33, 33, 33, 0.4) solid 1px; /* Bottom border for separation */
 }
 
 .profile__page-section {
 }
 
 .profile__avatar {
-  height: 190px;
-  width: 190px;
-  margin-right: 20px;
+  height: 190px; /* Fixed height for the avatar */
+  width: 190px; /* Fixed width for the avatar */
+  margin-right: 20px; /* Margin to the right for spacing */
 }
 
 .profile__column {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Flexbox for column layout */
+  flex-direction: column; /* Column direction for layout */
 }
 
 .profile__edit-btn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  font-size: 0.85rem;
-  border: 1px solid #ccc;
+  display: flex; /* Flexbox for button layout */
+  align-items: center; /* Center items vertically */
+  gap: 6px; /* Gap between icon and text */
+  padding: 6px 12px; /* Padding for the button */
+  font-size: 0.85rem; /* Font size for the button */
+  border: 1px solid #ccc; /* Light gray border for the button */
   background-color: #f5f5f5; /* Lighter than #fff */
-  color: #1a1a1a;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  color: #1a1a1a; /* Dark text color for contrast */
+  border-radius: 6px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor for clickable button */
+  transition: background-color 0.2s ease; /* Smooth transition for hover effect */
 }
 
 .profile__edit-btn:hover {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* Slightly darker on hover */
 }
 
 .profile__edit-btn img {
-  width: 16px;
-  height: 16px;
+  width: 16px; /* Fixed width for the edit icon */
+  height: 16px; /* Fixed height for the edit icon */
 }
 
 .profile__name {
-  margin: 0 0 12px;
-  font-weight: 500;
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  max-width: 420px;
+  margin: 0 0 12px; /* Margin for spacing below the name */
+  font-weight: 500; /* Medium font weight for the name */
+  display: -webkit-box; /* Flexbox for text layout */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Ellipsis for overflow text */
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical; /* Vertical orientation for text */
+  max-width: 420px; /* Limit width to fit profile */
 }
 
 .profile__description {
-  margin: 0;
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  max-width: 420px;
+  margin: 0; /* No margin for the description */
+  display: -webkit-box; /* Flexbox for text layout */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Ellipsis for overflow text */
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical; /* Vertical orientation for text */
+  max-width: 420px; /* Limit width to fit profile */
 }
 
 .profile__add-btn {
-  margin: 0;
-  margin-left: auto;
-  border: none;
-  border-radius: 6px;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  cursor: pointer;
-  box-shadow: none;
-  z-index: 1;
+  margin: 0; /* Reset margin */
+  margin-left: auto; /* Align to the right */
+  border: none; /* No border for the button */
+  border-radius: 6px; /* Rounded corners for the button */
+  padding: 0.5rem 0.75rem; /* Padding for the button */
+  font-size: 0.85rem; /* Smaller font size for the button */
+  position: absolute; /* Absolute positioning for the button */
+  bottom: 1rem; /* Position at the bottom */
+  right: 1rem; /* Position to the right */
+  cursor: pointer; /* Pointer cursor for clickable button */
+  box-shadow: none; /* No box shadow for the button */
+  z-index: 1; /* Ensure button is above other elements */
 }
 
 .profile__add-btn img {
-  background: none;
-  background-color: transparent;
-  border-radius: 0;
-  display: inline-block;
+  background: none; /* No background for the icon */
+  background-color: transparent; /* Transparent background for the icon */
+  border-radius: 0; /* No border radius for the icon */
+  display: inline-block; /* Inline block for the icon */
 }
 
 @media screen and (max-width: 627px) {
   .profile {
-    flex-direction: column;
-    max-width: 288px;
-    align-items: center;
-    text-align: center;
-    padding-top: 20px;
+    flex-direction: column; /* Column layout for smaller screens */
+    max-width: 288px; /* Limit width for smaller screens */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text alignment */
+    padding-top: 20px; /* Adjust top padding for smaller screens */
   }
   .profile__avatar {
-    margin: 0 0 12px;
-    height: 80px;
-    width: 80px;
+    margin: 0 0 12px; /* Margin below the avatar */
+    height: 80px; /* Reduced height for the avatar */
+    width: 80px; /* Reduced width for the avatar */
   }
 
   .profile__name {
-    font-size: 20px;
-    margin: 0 0 6px;
-    max-width: 288px;
+    font-size: 20px; /* Font size for the name */
+    margin: 0 0 6px; /* Margin below the name */
+    max-width: 288px; /* Limit width for smaller screens */
   }
 
   .profile__description {
-    margin: 0 0 32px;
-    max-width: 288px;
+    margin: 0 0 32px; /* Margin below the description */
+    max-width: 288px; /* Limit width for smaller screens */
   }
 
   .profile__column {
-    margin: 0 0 20px;
+    margin: 0 0 20px; /* Margin below the column */
   }
 
   .profile__add-btn {
-    margin: 0 auto;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1a1a1a;
-    color: #fff;
+    margin: 0 auto; /* Center the add button */
+    width: auto; /* Auto width for the button */
+    display: flex; /* Flexbox for button layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    background-color: #1a1a1a; /* Dark background for the button */
+    color: #fff; /* White text color for contrast */
   }
 
   .profile__edit-btn {
-    margin: 0 auto 20px;
-    font-size: 0.8rem;
-    padding: 5px 10px;
+    margin: 0 auto 20px; /* Center the edit button */
+    font-size: 0.8rem; /* Smaller font size for the button */
+    padding: 5px 10px; /* Reduced padding for the button */
   }
 }
